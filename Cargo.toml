@@ -1,6 +1,3 @@
-[package]
-name = "rust_exercise"
-version = "0.1.0"
-edition = "2021"
-
-[dependencies]
+[workspace]
+members = ["exercises/*/*", "helpers/common", "helpers/mdbook-exercise-linker", "helpers/ticket_fields"]
+resolver = "2"
