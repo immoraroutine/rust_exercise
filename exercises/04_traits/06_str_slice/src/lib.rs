@@ -25,21 +25,21 @@ impl Ticket {
         }
 
         Ticket {
-            title,
-            description,
-            status,
+            title: title.to_string(),
+            description: description.to_string(),
+            status: status.to_string(),
         }
     }
 
-    pub fn title(&self) -> &String {
+    pub fn title(&self) -> &str {
         &self.title
     }
 
-    pub fn description(&self) -> &String {
+    pub fn description(&self) -> &str {
         &self.description
     }
 
-    pub fn status(&self) -> &String {
+    pub fn status(&self) -> &str {
         &self.status
     }
 }
